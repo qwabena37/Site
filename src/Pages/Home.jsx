@@ -7,12 +7,11 @@ export default function Home() {
   return (
     <div className="bg-gray-50">
 
-      {/* HERO SECTION */}
-      <section
-  className="text-white py-24 px-4 bg-cover bg-center bg-no-repeat"
+     {/* HERO SECTION */}
+<section
+  className="text-white px-4 bg-cover bg-center bg-no-repeat min-h-screen flex items-center"
   style={{
-    backgroundImage:
-      "url('./images/Aba.jpeg')",
+    backgroundImage: "url('./images/Aba.jpeg')",
   }}
 >
         <div className="max-w-6xl mx-auto text-center">

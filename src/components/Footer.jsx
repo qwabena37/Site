@@ -14,7 +14,7 @@ export default function Footer() {
 
           {/* BRAND */}
           <div>
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-orange-500">
               Shop With Aba
             </h2>
 
@@ -84,7 +84,7 @@ export default function Footer() {
         {/* BOTTOM BAR */}
         <div className="border-t border-white/20 mt-10 pt-6 text-sm text-white/80 flex flex-col md:flex-row justify-between gap-3">
           <p>© 2026 Shop With Aba. All Rights Reserved.</p>
-
+          <p>Design by JayTech Solutions</p>
           <p className="text-white/60">
             Made with ❤️ for stylish shoppers
           </p>

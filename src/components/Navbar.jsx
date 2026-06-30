@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaShoppingBag, FaTiktok, FaFacebook } from "react-icons/fa";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,11 +17,20 @@ export default function Navbar() {
       {/* NAVBAR TOP */}
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-        <h1 className="text-3xl font-bold text-pink-600">
-          SHOP WITH ABA
-        </h1>
+        <h1 className="flex items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide">
+  <NavLink
+    to="/"
+    className="flex items-center gap-2 text-pink-600 hover:text-pink-700 transition-colors duration-300"
+  >
+    <FaShoppingBag className="text-pink-500 text-base sm:text-lg md:text-xl lg:text-2xl" />
 
-        <div className="hidden md:flex gap-6">
+    <span className="bg-gradient-to-r from-pink-600 to-orange-500 bg-clip-text text-transparent">
+      SHOP WITH ABA
+    </span>
+  </NavLink>
+</h1>
+
+        <div className="text-orange-500 hidden md:flex gap-6">
           <NavLink to="/" className={linkClass}>Home</NavLink>
           <NavLink to="/bags" className={linkClass}>Bags</NavLink>
           <NavLink to="/contact" className={linkClass}>Contact</NavLink>
